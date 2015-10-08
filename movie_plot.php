@@ -40,9 +40,24 @@ class MoviePlotGenerator {
 		$his_occupation = $this->getRandom(self::$occupations);
 		$his_quirk = $this->getRandom(self::$quirks);
 		
-		$her_adjective = $this->getRandom(self::$adjectives);
+
+		$her_adjective =  $this->getRandom(self::$adjectives);
+		if ($her_adjective == $his_adjective) {
+						$her_adjective =  $this->getRandom(self::$adjectives);
+						return $her_adjective;
+		}
+		
 		$her_occupation = $this->getRandom(self::$occupations);
-		$her_quirk = $this->getRandom(self::$quirks);		
+		if ($her_occupation == $his_occupation) {
+						$her_occupation =  $this->getRandom(self::$occupations);
+						return $her_occupation;
+		}
+
+		$her_quirk = $this->getRandom(self::$quirks);	
+		if ($her_quirk == $his_quirk) {
+						$her_quirk =  $this->getRandom(self::$quirks);
+						return $her_quirk;
+		}	
 		
 		$plot  = "He's a $his_adjective $his_occupation with a $his_quirk. ";
 		$plot .= "She's a $her_adjective $her_occupation with a $her_quirk. ";
