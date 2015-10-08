@@ -4,7 +4,8 @@ class MoviePlotGenerator {
 									  'diminuitive',
 									  'fat',
 									  'determined',
-									  'girsly');
+									  'girsly',
+									  'extraordinary');
 						
 	public static $occupations = array('movie-critic',
 									   'goat wrangler',
@@ -14,7 +15,8 @@ class MoviePlotGenerator {
 									   'archaeologist',
 									   'investment banker',
 									   'baker',
-									   'swimsuit model');
+									   'swimsuit model',
+									   'astronaut');
 						 
 	public static $quirks = array('penchant for melodrama',
 								  'murky past',
@@ -24,7 +26,8 @@ class MoviePlotGenerator {
 								  'background in Kung Fu',
 								  'baby on the way',
 								  '57\' Chevy',
-								  'family back in Mexico');
+								  'family back in Mexico',
+								  'obsessed with gnomes');
 					
 	/**
 	 *
