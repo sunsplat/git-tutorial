@@ -14,7 +14,8 @@ class MoviePlotGenerator {
 									   'archaeologist',
 									   'investment banker',
 									   'baker',
-									   'swimsuit model');
+									   'swimsuit model',
+									   'astronaut');
 						 
 	public static $quirks = array('penchant for melodrama',
 								  'murky past',
@@ -24,7 +25,8 @@ class MoviePlotGenerator {
 								  'background in Kung Fu',
 								  'baby on the way',
 								  '57\' Chevy',
-								  'family back in Mexico');
+								  'family back in Mexico'
+								  'obsessed with gnomes');
 					
 	/**
 	 *
@@ -57,7 +59,7 @@ class MoviePlotGenerator {
 	 */	
 	protected function getRandom($arr)
 	{
-		return $arr[rand(0, count($arr) - 1)];
+		return $arr[mt_rand(0, count($arr) - 1)];
 	}
 		
 }
