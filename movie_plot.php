@@ -25,7 +25,7 @@ class MoviePlotGenerator {
 								  'background in Kung Fu',
 								  'baby on the way',
 								  '57\' Chevy',
-								  'family back in Mexico'
+								  'family back in Mexico',
 								  'obsessed with gnomes');
 					
 	/**
